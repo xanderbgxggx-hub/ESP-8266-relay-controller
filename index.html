@@ -276,7 +276,7 @@
 
       document.getElementById("allOffBtn").onclick = () => {
         relays.forEach(relay => {
-          db.ref("/" + relay.path).set(false);
+          db.ref("/" + relay.path).set(true);
         });
       };
     }
@@ -297,5 +297,6 @@
 </body>
 
 </html>
+
 
 

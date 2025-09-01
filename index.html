@@ -263,8 +263,8 @@
 
         relayRef.on("value", (snapshot) => {
           const state = snapshot.val();
-          statusText.innerText = state ? "ON" : "OFF";
-          toggleButton.style.backgroundColor = state ? "green" : "blue";
+          statusText.innerText = state ? "OFF" : "ON";
+          toggleButton.style.backgroundColor = state ? "red" : "green";
         });
 
         toggleButton.onclick = () => {
@@ -295,4 +295,5 @@
     };
   </script>
 </body>
+
 </html>

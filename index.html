@@ -72,7 +72,7 @@
       opacity: 0.8;
     }
     #logoutBtn {
-      background-color: #555;
+      background-color: #000000;
     }
     #logoutBtn:hover {
       opacity: 0.8;
@@ -264,7 +264,7 @@
         relayRef.on("value", (snapshot) => {
           const state = snapshot.val();
           statusText.innerText = state ? "OFF" : "ON";
-          toggleButton.style.backgroundColor = state ? "#572121" : "green";
+          toggleButton.style.backgroundColor = state ? "#555" : "green";
         });
 
         toggleButton.onclick = () => {
@@ -297,4 +297,5 @@
 </body>
 
 </html>
+
 
